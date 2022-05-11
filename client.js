@@ -15,6 +15,8 @@ const connect = function () {
     conn.write('Name: DWK', (err) => {
       console.log(err);
     });
+    // conn.write('Move: up');
+
     conn.on('data', (msg) => {
       console.log(msg);
     });
